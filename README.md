@@ -2,8 +2,8 @@
 
 ```js
 var _CompareProducts = new CompareProducts({
-  buttonNotAddedText: 'Добавить в избранное', // текст не активной кнопки, передать null если не нужен текст
-  buttonAddedText: 'Удалить из избранного', // текст активной кнопки, передать null если не нужен текст
+  buttonNotAddedText: 'Добавить в сравнение', // текст не активной кнопки, передать null если не нужен текст
+  buttonAddedText: 'Удалить из сравнения', // текст активной кнопки, передать null если не нужен текст
   onAdd: function (data) {
     alertify.success('Товар добавлен в сравнение');
   },
