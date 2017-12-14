@@ -10,8 +10,8 @@ var defaults = {
   buttonNotAddedText: null, // текст не активной кнопки
   buttonAddedText: null, // текст активной кнопки
   titles: {
-    added: 'Добавлен в сранение',
-    notAdded: 'Добавить в сранение'
+    added: 'Добавлен в сравнение',
+    notAdded: 'Добавить в сравнение'
   },
   classes: {
     added: 'is-added',
