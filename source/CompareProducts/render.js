@@ -20,7 +20,7 @@ function remove($target, options) {
 function update(data, options, productIds) {
   var $counter = $( getDataAttrName(options.selectors.counter) );
   var size = data.products.length;
-  var _method = data.action.method;
+  var _method = (data.action && typeof data.action.method != 'undefined') ? data.action.method : 'init';
 
   if (size && size > 0) {
     $counter.html(options.counterTemplate.replace( '%c%', size )).removeClass(options.classes.empty);
@@ -79,7 +79,6 @@ function getDataAttrName(name, value) {
 
   return '[data-' + resultName + ']';
 }
-
 
 module.exports = {
   'add': add,

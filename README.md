@@ -20,6 +20,9 @@ var _CompareProducts = new CompareProducts({
     alertify.warning('Достигнуто максимальное количество сравниваемых товаров - ' + data.maxItems);
   }
 });
+
+// если нужно обновиться
+_CompareProducts.update();
 ```
 
 ```twig
