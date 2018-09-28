@@ -2,6 +2,8 @@
 
 ```js
 var _CompareProducts = new CompareProducts({
+  counterTemplate: '(%c%)', // regexp %c%
+  counterTemplateEmpty: null, // regexp %c%
   buttonNotAddedText: 'Добавить в сравнение', // текст не активной кнопки, передать null если не нужен текст
   buttonAddedText: 'Удалить из сравнения', // текст активной кнопки, передать null если не нужен текст
   onAdd: function (data) {
